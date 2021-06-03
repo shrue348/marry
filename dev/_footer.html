@@ -1,0 +1,67 @@
+
+<div class="footer">
+  <div class="footer_top">
+    <div class="wrapper">
+      <a href="" class="call__request">Оставить<br />заявку</a>
+			<a href="" class="call__back">Обратный звонок</a>
+      <a href="" class="header_links__facebook">
+				<svg><use xlink:href="#icon-facebook"></use></svg>
+			</a>
+			<a href="" class="header_links__instagram">
+				<svg><use xlink:href="#icon-instagram"></use></svg>
+			</a>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="wrapper">
+      <div class="footer_logo">
+        <svg><use xlink:href="#icon-footer-logo"></use></svg>
+      </div>
+      <nav class="footer_menu">
+        <a href="about.html" class="footer_menu__link">О нас</a>
+        <a href="" class="footer_menu__link">Локации</a>
+        <a href="" class="footer_menu__link">Портфолио</a>
+        <a href="" class="footer_menu__link">Пресса | Блог</a>
+        <a href="" class="footer_menu__link">Услуги</a>
+        <a href="" class="footer_menu__link">Связаться с нами</a>
+      </nav>
+
+<!--можно удалить-->
+      <nav class="footer_menu">
+        <a href="locations.html" class="footer_menu__link">locations.html</a>
+        <a href="location.html" class="footer_menu__link">location.html</a>
+        <a href="weddings.html" class="footer_menu__link">weddings.html</a>
+        <a href="about.html" class="footer_menu__link">about.html</a>
+      </nav>
+
+      <a href="mailto:info@bs-weddings.com" class="footer_email">info@bs-weddings.com</a>
+    </div>
+  </div>
+  <div class="copy"><div class="wrapper">Bride’Sight by Moss Production all rights reserved</div></div>
+</div>
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.viewportchecker.min.js"></script>
+<script src="js/selectbox.min.js"></script>
+<script src="js/ready.js"></script>
+
+<script>
+  var ajax = new XMLHttpRequest();
+  ajax.open("GET", "/img/sprite.svg", true);
+  ajax.send();
+  ajax.onload = function (e) {
+    var div = document.createElement("div");
+    div.innerHTML = ajax.responseText;
+    document.body.insertBefore(div, document.body.childNodes[0]);
+  }
+</script>
+</body>
+</html>
