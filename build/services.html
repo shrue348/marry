@@ -261,8 +261,9 @@
 <div class="footer">
   <div class="footer_top">
     <div class="wrapper">
-      <a href="" class="call__request">Оставить<br />заявку</a>
-			<a href="" class="call__back">Обратный звонок</a>
+      <a href="javascript:;" class="call__request" data-toggle="modal" data-target="#modal_request">Оставить<br />заявку</a>
+			<a href="javascript:;" class="call__back" data-toggle="modal" data-target="#modal_call">Обратный звонок</a>
+			<a href="javascript:;" class="call__back" data-toggle="modal" data-target="#modal_thanks">Модалка спасибо</a>
       <a href="" class="header_links__facebook">
 				<svg><use xlink:href="#icon-facebook"></use></svg>
 			</a>
@@ -305,6 +306,128 @@
 </div>
 
 
+<div class="modal fade" id="modal_call" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Close">
+        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="-0.75" x2="39.598" y2="-0.75" transform="matrix(-0.707107 0.707107 0.707107 0.707107 30 2)" stroke="#A89675" stroke-width="1.5"/>
+          <line x1="2.53033" y1="1.46967" x2="30.5303" y2="29.4697" stroke="#A89675" stroke-width="1.5"/>
+        </svg>
+      </a>
+      <div class="modal_title">Обратный звонок</div>
+      <div class="modal_subtitle">Заполните, пожалуйста, поля ниже, и <br>свяжемся с вами в течении часа</div>
+      <div class="modal_form form">
+        <form action="">
+          <div class="form_field">
+            <input type="text" name="name" placeholder="Имя">
+          </div>
+          <div class="form_field">
+            <input type="text" name="phone" placeholder="Телефон">
+          </div>
+
+          <button type="submit" class="round_btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal_request" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Close">
+        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="-0.75" x2="39.598" y2="-0.75" transform="matrix(-0.707107 0.707107 0.707107 0.707107 30 2)" stroke="#A89675" stroke-width="1.5"/>
+          <line x1="2.53033" y1="1.46967" x2="30.5303" y2="29.4697" stroke="#A89675" stroke-width="1.5"/>
+        </svg>
+      </a>
+      <div class="modal_form form">
+        <form action="">
+          <div class="modal-dialog_top">
+            <div class="row">
+              <div class="col-6">
+                <div class="modal_title">Оставить заявку</div>
+              </div>
+              <div class="col-6">
+                <div class="modal_subtitle">Заполните, пожалуйста, поля ниже, чтобы мы смогли связаться с вами и предоставить актуальную информацию</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3">
+                <div class="form_field">
+                  <input type="text" name="name" placeholder="Имя">
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="form_field">
+                  <input type="text" name="phone" placeholder="Телефон*">
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="form_field">
+                  <input type="email" name="email" placeholder="Е-меил*">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-dialog_bottom">
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form_field">
+                      <input type="text" name="guiests" placeholder="Кол-во гостей">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form_field">
+                      <input type="text" name="price" placeholder="Бюджет в €">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="modal-dialog_bottom_bottom">
+                  <button type="submit" class="round_btn">Отправить</button>
+                  <div class="modal_subtitle">*обязательные поля</div>
+                </div>
+                
+              </div>
+
+              <div class="col-6">
+                <div class="form_field">
+                  <textarea name="comment" cols="30" rows="12" placeholder="Комментарий"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal_thanks" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Close">
+        <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="-0.75" x2="39.598" y2="-0.75" transform="matrix(-0.707107 0.707107 0.707107 0.707107 30 2)" stroke="#A89675" stroke-width="1.5"/>
+          <line x1="2.53033" y1="1.46967" x2="30.5303" y2="29.4697" stroke="#A89675" stroke-width="1.5"/>
+        </svg>
+      </a>
+      <div class="modal_title">Спасибо!</div>
+      <div class="modal_subtitle">Вскоре мы с вами свяжемся и проконсультируем по всем вопросам</div>
+  
+    </div>
+  </div>
+</div>
 
 
 <script src="js/jquery.min.js"></script>
