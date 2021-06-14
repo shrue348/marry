@@ -925,7 +925,7 @@ h2:first-child,
 .page_locations__item_control__count { display: flex; align-items: center; justify-content: center; font-size: 12px; letter-spacing: 2.5px; line-height: 22px; margin-bottom: 20px; color: #B2A89E; } 
 .page_locations__item_control__count svg { width: 14px; height: 14px; margin-right: 16px; } 
 .page_locations__item_fav { box-sizing: border-box; width: 75px; height: 75px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid #B2A89E; position: absolute; z-index: 1; top: 64px; right: 130px; }
-.page_locations__item_fav svg { width: 17px; height: 17px; }
+.page_locations__item_fav svg { width: 17px; height: 17px; color: #B2A89E; }
 .page_locations__item_title { color: #fff; position: absolute; z-index: 1; left: 71px; top: 86px; text-transform: uppercase; font-size: 12px; line-height: 20px; letter-spacing: 2.5px; }
 .page_locations_controls { display: flex; align-items: center; justify-content: space-between; margin-bottom: 127px; }
 .page_locations_controls__link { display: block; line-height: 1; }
@@ -1077,9 +1077,10 @@ h2:first-child,
 .section_img { padding: 0; position: relative; }
 .section_img img { display: block; line-height: 1; width: 100%; height: auto !important; } 
 .section_img_imgs { position: relative; margin-left: -130px; }
+.section_img_imgs-brown { background-color: #EAE3DB; padding: 100px; }
 .section_img_min { position: absolute; z-index: 1; top: -112px; right: 76px; }
 
-
+.section_img_imgs-brown img { display: block; line-height: 1; width: auto; height: auto !important; margin: auto; } 
 
 
 
@@ -1195,10 +1196,8 @@ h2:first-child,
 #modal_call .modal_form { max-width: 590px; margin: auto; display: flex; flex-direction: column; }
 #modal_call .round_btn { display:  block; margin: auto; }
 
-
 #modal_thanks .modal-dialog { background: url(../img/modal_thanks.jpg) no-repeat scroll center / cover transparent; padding: 100px; width: 100%; max-width: 1500px; color: #B2A89E; min-height: 600px; display: flex; flex-direction: column; align-items: center; }
 #modal_thanks .modal-content { margin: auto; }
-
 
 #modal_request .modal-dialog { background-color: #FFFDFB; width: 100%; max-width: 1500px; color: #A89675; padding: 0; }
 #modal_request .modal-dialog_top { padding: 100px 100px 50px; }
@@ -1206,7 +1205,6 @@ h2:first-child,
 #modal_request .modal-dialog_top .row + .row { margin-top: 40px; }
 #modal_request .modal-dialog_bottom { padding: 70px 100px 70px; border-top: 1px solid rgba(168, 150, 117, 0.3); }
 #modal_request .modal-dialog_bottom_bottom { display: flex; align-items: flex-start; gap: 30px; }
-
 #modal_request .modal_title { text-align: left; }
 #modal_request .modal_subtitle { text-align: left; margin-bottom: 0;}
 
